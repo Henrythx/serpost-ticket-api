@@ -1,4 +1,7 @@
-package com.tickek.entities;
+
+
+
+package com.tickek.domain.model;
 
 import java.time.LocalDateTime;
 
@@ -13,7 +16,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "lista_atencion")
-public class AtencionEntitty {
+public class AtencionEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -44,10 +47,10 @@ public class AtencionEntitty {
 
     
     //  CONTROLLERS
-    public AtencionEntitty() {
+    public AtencionEntity() {
     }
 
-    public AtencionEntitty(TicketEntity ticket, UsuarioEntity usuario, EstadoEntity estadoActual,
+    public AtencionEntity(TicketEntity ticket, UsuarioEntity usuario, EstadoEntity estadoActual,
             EstadoEntity estadoAntiguo, String descripcion) {
         this.ticket = ticket;
         this.usuario = usuario;

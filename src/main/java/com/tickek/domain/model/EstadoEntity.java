@@ -1,4 +1,4 @@
-package com.tickek.entities;
+package com.tickek.domain.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -8,27 +8,32 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "prioridades")
-public class PrioridadEntity {
+@Table(name = "estados")
+public class EstadoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true, length = 50)
+    @Column(nullable = false, unique = true, length = 100)
     private String nombre;
+
+    @Column(length = 255)
+    private String descripcion;
 
 
 
 
     //  CONSTRUCTOR
-    public PrioridadEntity() {
+    public EstadoEntity() {
+        
     }
 
-    public PrioridadEntity(String nombre) {
+    public EstadoEntity(String nombre, String descripcion) {
         this.nombre = nombre;
+        this.descripcion = descripcion;
     }
 
-    
+
 
 
     //  GETTERS Y SETTERS
@@ -46,5 +51,13 @@ public class PrioridadEntity {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 }

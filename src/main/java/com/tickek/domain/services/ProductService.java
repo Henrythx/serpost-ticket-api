@@ -1,9 +1,9 @@
-package com.tickek.services;
+package com.tickek.domain.services;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.tickek.entities.Product;
+import com.tickek.domain.model.Product;
 
 public interface ProductService {
     List<Product> findAll();

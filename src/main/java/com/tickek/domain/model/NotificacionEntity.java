@@ -1,4 +1,7 @@
-package com.tickek.entities;
+
+
+
+package com.tickek.domain.model;
 
 import java.time.LocalDateTime;
 

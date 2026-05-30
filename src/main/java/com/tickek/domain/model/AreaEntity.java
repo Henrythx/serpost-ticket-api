@@ -1,4 +1,4 @@
-package com.tickek.entities;
+package com.tickek.domain.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -30,6 +30,7 @@ public class AreaEntity {
     }
 
     public AreaEntity(String nombre, String descripcion, boolean activo) {
+
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.activo = activo;

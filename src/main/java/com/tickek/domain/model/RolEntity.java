@@ -1,4 +1,4 @@
-package com.tickek.entities;
+package com.tickek.domain.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,6 +28,7 @@ public class RolEntity {
     }
 
     public RolEntity(String nombre, String descripcion) {
+
         this.nombre = nombre;
         this.descripcion = descripcion;
     }

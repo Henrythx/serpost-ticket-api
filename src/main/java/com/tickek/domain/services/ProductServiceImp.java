@@ -1,4 +1,4 @@
-package com.tickek.services;
+package com.tickek.domain.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.tickek.entities.Product;
-import com.tickek.repositories.ProductRepository;
+import com.tickek.domain.model.Product;
+import com.tickek.infrastructure.repositories.ProductRepository;
 
 @Service
 public class ProductServiceImp implements ProductService {

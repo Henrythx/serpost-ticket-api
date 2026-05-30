@@ -1,4 +1,4 @@
-package com.tickek.entities;
+package com.tickek.domain.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
